@@ -1,0 +1,40 @@
+
+<html>  
+ <head>  
+ <title>home</title>  
+ </head>  
+ <body>
+ <form method = "POST" action = "./medialocal">     
+ <h3>Welcome to the website</h3>  
+ <a> Bienvenido, {{nombre}} </a><br>    
+ <a href = "/logout">Log out</a><br>  
+ <a> Valor actual: {{valor}} </a><br>
+ <a> Número de medias solicitadas por el usuario a la BBDD local: {{nmedias}} </a><br>  
+ <a> Número de medias solicitadas por el usuario a la BBDD online: {{nmedias_ol}} </a> 
+ 
+  <form method = "POST" action = "./medialocal">  
+ <table>    
+             <tr><td><input type = "submit" value = "MediaLocal"></td></tr>  
+ </table>
+ </form>
+ <form method = "POST" action = "./mediaonline"> 
+  <table>    
+             <tr><td><input type = "submit" value = "MediaOnline"></td></tr>  
+ </table>
+ </form>
+    <form method = "POST" action = "./umbralhistorico">  
+       <table>  
+             <tr><td>Escoge un umbral</td><td><input type = 'umbral' name = 'umbral'></td></tr>  
+             
+             <tr><td><input type = "submit" value = "Submit"></td></tr>  
+         </table>   
+     </form> 
+     
+     
+      <form method = "POST" action = "./graficas"> 
+  <table>    
+             <tr><td><input type = "submit" value = "Gráficas"></td></tr>  
+ </table>
+ </form>
+ </body>  
+ </html> 
