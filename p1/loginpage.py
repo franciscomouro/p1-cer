@@ -329,8 +329,9 @@ def success():
             #print(comprobacion[1])
             if (contrasena_comp == contrasena_rec):
                 session['email'] = request.form['email']
-                return render_template('success3.html')
-            return render_template('loginmal.html')
+                return render_template('success3.html') #si todo sale bien devuelve pagina de login correcto
+            return render_template('loginmal.html') #error en contraseña
+        return render_template('loginmal.html') #error en email
 
 @app.route('/graficas', methods = ["POST"])
 def graficas():
