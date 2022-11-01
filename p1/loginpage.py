@@ -93,11 +93,8 @@ def guardar_valores_ol():
     
 def timer():
     while True:
-        time.sleep(118)
-        guardar_valores()
-        time.sleep(1)
         guardar_valores_ol()
-        time.sleep(1)
+        time.sleep(120)
         
 
 
