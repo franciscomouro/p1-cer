@@ -76,7 +76,7 @@ def aumentar_nmedias_ol():
 def guardar_valores():
     client = MongoClient('localhost')
     db = client['Mongaso']
-    col2 = db['prueba2']
+    col2 = db['valores']
     valor = obtener_valor()
     fecha = str(datetime.now())
     col2.insert_one({
@@ -240,7 +240,7 @@ def obtener_media_local():
 
     client = MongoClient('localhost')
     db = client['Mongaso']
-    col2 = db['prueba2']
+    col2 = db['valores']
     acumulacion = 0
     for entrada in col2.find({}):
         entrada = str(entrada)
